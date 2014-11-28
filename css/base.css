@@ -1,0 +1,367 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Typography
+	#Links
+	#Buttons
+	#Browser Fix
+	#Misc
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing :border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; 
+		text-decoration:none;}
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+		
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+*::-moz-selection {
+    background: #111111;
+    color: #ffffff;
+}
+
+a:focus {
+outline: 0;
+}
+
+iframe{width:100%;frameborder:0;}
+	
+
+
+/* #Basic Styles
+================================================== */
+	body {
+		background: #ffffff;
+		font: 14px/21px 'open_sans', Arial, sans-serif;
+		color: #999999;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+
+		
+ }
+
+
+
+/* #Typography and #Common style
+================================================== */
+	h1, h2, h3, h4, h5, h6 {color: #343434;font-weight: normal;text-transform:uppercase;}
+	
+
+	
+	
+	
+	h2{font-size:18px;}
+	h3{font-size:16px;margin-bottom:10px;}
+	
+	p{line-height:22px;}
+	em { font-style: italic; }
+	strong { font-weight: bold; color: #333; }
+	small { font-size: 80%; }
+	
+	
+	.bigTitle{
+		position:relative;
+	}
+
+	.bigTitle img {
+	    background:#ffffff;
+	    left: 48.53%;
+	    padding: 3px 7px;
+	    position: absolute;
+	    top: 37px;
+	    width: 3%;
+	}
+	
+	.tgreyHolder .bigTitle img {
+	    background:#f4f4f4;
+	}
+	
+	
+	.tdarkHolder .bigTitle img {
+	    background:#343434;
+	}
+
+	.bigTitle h1{
+		font-size:18px;
+		margin-bottom:50px;
+		display:inline-block;
+		padding:10px 20px;
+		position:relative;
+	}
+	
+	.bigTitle h1:after {
+	    background:#343434;
+	    content: "";
+	    height: 2px;
+	    left: 50%;
+	    position: absolute;
+	    top: 45px;
+	    width: 70px;
+	    margin-left: -35px;
+	}
+	
+	
+	.bigTitle.dark h1 {
+	    color:#f1f1f1;
+	}
+	
+	
+	.bigTitle.dark h1:after {
+	    background:#f1f1f1;
+	}
+	
+	.introTitle {
+	    position: relative;
+	}
+	
+	.introTitle h1:after {
+	    background: none repeat scroll 0 0 #f1f1f1;
+	    content: "";
+	    height: 2px;
+	    left: 50%;
+	    margin-left: -36.8px;
+	    position: absolute;
+	    top: 70px;
+	    width: 70px;
+	}
+	
+	
+	.introTitle img {
+	    background:#343434;
+	    left: 41.8%;
+	    padding: 3px 7px;
+	    position: absolute;
+	    top: 62px;
+	    width: 15%;
+	}
+	
+	.smallIntro p{
+		color:#ffffff;
+		font-size:20px;
+		display:inline-block;
+		
+	}
+	
+	
+	
+	.singleTeaser{
+		background:#4ac2be;
+		position:relative;
+		overflow: hidden;
+	}
+	
+	.imgTS{
+	    background-position: 50% 35%;
+	    background-size: cover;
+	    display: block;
+	    height: 100%;
+	    overflow: hidden;
+	    position: absolute;
+	    right: 0;
+	    width: 53%;
+		top:0;
+	}
+	
+	.stInner{
+		color:#ffffff;
+	}
+	
+
+	
+	 a.btnLaunch{
+		
+	    border: 3px solid #ffffff;
+	    color: #ffffff;
+	    display: inline-block;
+	    font-size: 15px;
+		margin-left:100px;
+		padding:6px 16px;
+	}
+	
+	
+	
+	a.btnLaunch:hover{
+		color:#343434;
+		background:#ffffff;
+	}
+	
+	
+	
+	.logo h1, .caption h1, .ctl a, .introTitle h1, a.latestBtn, .projTitle h1, .cltInner h1
+	 , .cltInner a, .blContinue, .viewAll a, .postTitleL h1, .postTitle h1 a, .tagsSingle h4 , .comments h2, .respond h2, .widget h2,
+	.comments .reply-btn a , .contactForm #submit, .replyForm #submit, .contactInner h1, .more a, .innerIntro h1,  a.btnLaunch
+	, .bigTitle h1, .buyLink a, .aboutTitle h1, .aboutInfo .ctl a, .rcgIntro h1, .rcgDet h1, .skillTitle h1, .getCv h3 , .printCV h3, .info h1, .intro h1, h1.prfTitle  {
+		font-family: 'RobotoBoldCondensed', Arial, sans-serif;
+	}
+	
+	
+	
+	.logo h1 span, .caption p,  .itemDesc h3,  .rcgDet h3 {
+		font-family: 'open_sanssemibold', Arial, sans-serif;
+	}
+	
+ 	.author a, .fbInner p .brand, .stp h3, .expDet h3, .smallIntro p span, .feedInner h3 , .mainNav li a, .aboutInfo li span, .det h3, .skillbarTitle, .pList li, .langList h4, .info ul li span{
+		font-family: 'open_sansbold', Arial, sans-serif;
+	}
+	
+	
+	.innerIntro h1 span,  ul#category li a, .projTitle p, .postMeta span, .postMeta span a
+	, .postSingle blockquote, .itemDesc span, .postTitleL p, .tweets .tweet_list, .word h3 span, .word p, .det h3 span, .date span
+	, .rcgDet h3 span {
+		font-family: 'open_sanslight_italic', Arial, sans-serif;
+
+	}
+	
+	
+	.innerIntro p .brand,  .rcgIntro p {
+		font-family: 'open_sanssemibold_italic', Arial, sans-serif;
+
+	}
+	
+
+	
+	.pagination ul li, .tagsListSingle li a, .searchForm input[type="text"], .catList li a, .catArchives li a, .meta li a, .tagsList li a
+	, .pstlDet .postTitle h1, .pstlDet .postTitle h1 a, .smallIntro p, .aboutTitle h1 span , .aboutIntro h1, h1.prfTitle span {
+		font-family: 'open_sanslight', Arial, sans-serif;
+	}
+	
+	
+	
+	
+	ul#category li a, .itemDesc span, .aboutTitle h1 span, .det h3 span, .det .date span, .insta h3
+	, .postMeta, .blContinue, .postSingle, .sidebar, .mainNav li a , .ctl a, a.latestBtn, .caption p
+	, .prc h3,  .feedInner h3
+	, .teaserMsg h1, .projTitle p, a.btnLaunch, .stp h3, .postTitleL p,.stTitle p, .mainNavSingle li a {
+			-webkit-text-stroke: 0.30px;
+	}
+	
+	
+
+
+
+
+/* #Links
+================================================== */
+	
+	a,.errorForm, .contactForm #submit,.tactive span, .pagination ul li span, .replyForm #submit, .shortFolio span, .shortContact span, .latest img, .item img, .prj img, .instaFeed li a:before  {
+		
+		transition: all 0.3s ease-in-out 0s;
+		-ms-transition: all 0.3s ease-in-out 0s;
+		-webkit-transition:all 0.3s ease-in-out 0s;
+		-moz-transition: all 0.3s ease-in-out 0s;
+		-o-transition: all 0.3s ease-in-out 0s;
+		
+	}
+	
+	
+
+
+	
+
+
+
+/* #Buttons
+================================================== */
+
+	.btn{
+		padding:8px 18px;
+	}
+
+	
+	
+/* #Browser Fix
+================================================== */
+		
+		
+		.searchForm input[type="text"],.pagination ul li , .contactForm input[type="text"], .contactForm textarea, 
+		.replyForm input[type="text"], .replyForm textarea, .comments .img,  .prSingle, .fct, .service, .plan, .post .postDetails , .projSocials li a, .projNav li a, 
+		
+	   .introTitle img, .introTitle, .bigTitle, .bigTitle img, .mainHeader, .showHideBtn, .headerSocials, .logo
+	   ,.subscribeForm .submitSubcribe, .subscribeForm input[type="text"]
+	   ,.inputColumns .column1, .inputColumns .column2, .inputColumns .column3, .contactForm input[type="text"], .contactForm textarea, .replyForm input[type="text"], .replyForm textarea, .replyFormLarge input[type="text"], .replyFormLarge textarea, .det, .dtIco span.ico, .imgProfile{
+		    box-sizing:border-box;
+			-moz-box-sizing:border-box; /* Firefox */
+		}
+
+
+
+
+
+
+/* #Misc
+================================================== */
+	.ofsBottom{padding-bottom:80px !important;}
+	.tCenter {text-align: center;}
+	.tLeft {text-align: left;}
+	.ofsTop{padding-top:80px !important;}
+	.ofsInTop{padding-top:60px !important;}
+	.ofsInBottom{padding-bottom:60px !important;}
+	.ofsTMedium{padding-top:40px !important;} 
+	.ofsBMedium{padding-bottom:40px !important;}
+	.ofsTSmall{padding-top:20px !important;} 
+	.ofsBSmall{padding-bottom:20px !important;}
+	.margTop{margin-top:60px !important;}
+	.margMTop{margin-top:70px !important;}
+	.margLTop{margin-top:80px !important;}
+	.margBottom{margin-bottom:60px !important;}
+	.margMBottom{margin-bottom:70px !important;}
+	.margLBottom{margin-bottom:80px !important;}
+	.margHBottom{margin-bottom:100px !important;}
+	.margHTop{margin-top:100px !important;}
+	.singleOffset{margin-top:150px !important;}
+	.blogSingle.singleOffset {margin-top: 64px !important;}
+	.bgGrey{background:#f3f3f3;}
+	.bgGreyDark{background:#343434;}
+	.bgGreen{background:#4ac2be;}
+	.bgGreenDark{background:#3eafab;}
+	.secTitle.pricingTitle h1{color:#f4f4f4;}
