@@ -303,7 +303,7 @@ $('.mainNav li a').click(function(){
 
 jQuery(".tweets").tweet({
   join_text: false,
-  username: "Just_Be_dougin", // Change username here
+  username: "just_be_dougin", // Change username here
   modpath: './twitter/',
   avatar_size: false,
   count: 1,
