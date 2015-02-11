@@ -1,4 +1,11 @@
 /*Preloader*/
+.itemDesc span {
+    margin-top: -5px;
+    font-size: 13px;
+    text-transform: none;
+    color: white;
+    }
+
 #loader {
     background: #ffffff;
     bottom: 0;
